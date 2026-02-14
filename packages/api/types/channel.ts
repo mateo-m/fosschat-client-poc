@@ -1,7 +1,7 @@
-import type { TMessage } from "./message";
-import type { TUser } from "./user";
+import type { TMessage } from './message';
+import type { TUser } from './user';
 
-type TChannelType = "text";
+type TChannelType = 'text';
 
 export type TChannel = {
   guildId: string;
@@ -9,7 +9,7 @@ export type TChannel = {
   type: TChannelType;
   name: string;
   description: string | null;
-}
+};
 
 export type TGetChannelParams = {
   guildId: string;
@@ -19,7 +19,7 @@ export type TGetChannelParams = {
 export type TGetChannelResponse200 = {
   data: {
     channel: TChannel | null;
-  }
+  };
 };
 
 export type TGetChannelMessagesParams = {
@@ -31,11 +31,11 @@ export type TGetChannelMessagesParams = {
 export type TGetChannelMessagesResponse200 = {
   data: {
     messages: TMessage[];
-  },
+  };
   pagination: {
     next_cursor: string | null;
     previous_cursor: string | null;
-  }
+  };
 };
 
 export type TGetChannelMembersParams = {
@@ -47,9 +47,9 @@ export type TGetChannelMembersParams = {
 export type TGetChannelMembersResponse200 = {
   data: {
     members: TUser[];
-  },
+  };
   pagination: {
     next_cursor: string | null;
     previous_cursor: string | null;
-  }
+  };
 };

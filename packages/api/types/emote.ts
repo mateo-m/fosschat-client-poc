@@ -1,11 +1,12 @@
 export type TEmote = {
   name: string;
 } & (
-  {
-    id: null}
-     | {
+  | {
+      id: null;
+    }
+  | {
       guildId: string;
       id: string;
-      url: string
+      url: string;
     }
-  );
+);

@@ -4,5 +4,9 @@
   "exports": {
     "./.oxlintrc.json": "./.oxlintrc.json"
   },
-  "files": [".oxlintrc.json"]
+  "files": [".oxlintrc.json"],
+  "devDependencies": {
+    "oxlint": "catalog:",
+    "oxfmt": "catalog:"
+  }
 }

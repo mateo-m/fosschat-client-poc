@@ -6,4 +6,4 @@ export type TUser = {
     src: string;
     alt: string;
   };
-}
+};

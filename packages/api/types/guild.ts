@@ -1,4 +1,4 @@
-import type { TUser } from "./user";
+import type { TUser } from './user';
 
 export type TGuild = {
   id: string;
@@ -7,30 +7,30 @@ export type TGuild = {
     src: string;
     alt: string;
   };
-}
+};
 
 export type TGetGuildMembersParams = {
   guildId: string;
   cursor: string | null;
-}
+};
 
 export type TGetGuildMembersResponse200 = {
   data: {
-    members: TUser[]
+    members: TUser[];
   };
   pagination: {
     next_cursor: string | null;
     previous_cursor: string | null;
-  }
-}
+  };
+};
 
 export type TGetGuildParams = {
   guildId: string;
-}
+};
 
 export type TGetGuildResponse200 = {
   data: {
-    guild: TGuild | null
+    guild: TGuild | null;
   };
 };
 

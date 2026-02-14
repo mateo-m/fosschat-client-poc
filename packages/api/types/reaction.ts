@@ -1,4 +1,4 @@
-import type { TEmote } from "./emote";
+import type { TEmote } from './emote';
 
 export type TReaction = {
   emote: TEmote;

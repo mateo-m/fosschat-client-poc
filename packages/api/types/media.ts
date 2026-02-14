@@ -7,21 +7,21 @@ type TMediaBase = {
 };
 
 type TVideoMedia = TMediaBase & {
-  type: "video";
+  type: 'video';
   width: number;
   height: number;
   duration: number;
-}
+};
 
 type TImageMedia = TMediaBase & {
-  type: "image";
+  type: 'image';
   width: number;
   height: number;
-}
+};
 
 export type TAudioMedia = TMediaBase & {
-  type: "audio";
+  type: 'audio';
   duration: number;
-}
+};
 
 export type TMedia = TVideoMedia | TImageMedia | TAudioMedia;

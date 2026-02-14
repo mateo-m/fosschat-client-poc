@@ -4,6 +4,10 @@
   "workspaces": {
     "": {
       "name": "personal",
+      "devDependencies": {
+        "oxfmt": "catalog:",
+        "oxlint": "catalog:",
+      },
     },
     "apps/web": {
       "name": "web",
@@ -43,10 +47,20 @@
     "packages/api": {
       "name": "@repo/api",
       "version": "0.0.1",
+      "devDependencies": {
+        "@repo/lint": "workspace:*",
+        "@tanstack/svelte-query": "catalog:",
+        "oxfmt": "catalog:",
+        "oxlint": "catalog:",
+      },
     },
     "packages/lint": {
       "name": "@repo/lint",
       "version": "0.0.1",
+      "devDependencies": {
+        "oxfmt": "catalog:",
+        "oxlint": "catalog:",
+      },
     },
   },
   "catalog": {

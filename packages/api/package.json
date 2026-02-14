@@ -1,12 +1,26 @@
 {
   "name": "@repo/api",
   "version": "0.0.1",
-  "exports": {
-    "./requests/*": "./requests/*.ts",
-    "./types/*": "./types/*.ts"
-  },
   "files": [
     "requests/*.ts",
-    "types/*.ts"
-  ]
+    "types/*.ts",
+    "queries/*.ts"
+  ],
+  "exports": {
+    "./requests/*": "./requests/*.ts",
+    "./types/*": "./types/*.ts",
+    "./queries/*": "./queries/*.ts"
+  },
+  "scripts": {
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
+  },
+  "devDependencies": {
+    "@repo/lint": "workspace:*",
+    "@tanstack/svelte-query": "catalog:",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:"
+  }
 }
