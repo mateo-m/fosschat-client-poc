@@ -1,0 +1,8 @@
+{
+  "name": "@repo/lint",
+  "version": "0.0.1",
+  "exports": {
+    "./.oxlintrc.json": "./.oxlintrc.json"
+  },
+  "files": [".oxlintrc.json"]
+}

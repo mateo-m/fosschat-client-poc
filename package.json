@@ -1,0 +1,24 @@
+{
+  "name": "fosschat-client-poc",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "catalog": {
+    "typescript": "^5.9.3",
+    "oxlint": "^1.47.0",
+    "oxfmt": "^0.32.0",
+    "@types/bun": "^1.3.9",
+    "@tanstack/svelte-query": "^6.0.18",
+    "@tanstack/svelte-virtual": "^3.13.18"
+
+  },
+  "scripts": {
+    "dev:web": "bun run --filter web dev",
+    "lint:web": "FORCE_COLOR=1 bun run --filter web lint",
+    "lint:fix:web": "FORCE_COLOR=1 bun run --filter web lint:fix",
+    "fmt:web": "FORCE_COLOR=1 bun run --filter web fmt",
+    "fmt:check:web": "FORCE_COLOR=1 bun run --filter web fmt:check"
+  }
+}
