@@ -33,7 +33,7 @@
 </script>
 
 <div
-  class="relative size-full w-[20dvw] lg:w-[15dvw] min-h-0 overflow-y-auto no-scrollbar min-w-[20dvw] lg:min-w-[15dvw]"
+  class="relative size-full w-[20dvw] lg:w-[15dvw] min-h-0 overflow-y-auto overscroll-none no-scrollbar min-w-[20dvw] lg:min-w-[15dvw]"
   bind:this={scrollElement}
 >
   <ol

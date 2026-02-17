@@ -7,6 +7,7 @@
     id: `${i + 1}`,
     name: `Guild ${i + 1}`,
     imageUrl: `/path/to/image${i + 1}.jpg`,
+    newMessagesCount: Math.floor(Math.random() * 120), // Random count for demo
   }));
 </script>
 
